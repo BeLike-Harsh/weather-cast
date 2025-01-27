@@ -129,14 +129,14 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 200px;
-    width: 100%; /* Ensure the container takes the full width */
+    width: 100%; 
 }
 
 #humidity, #wind-speed {
     font-size: 21px;
     color: #333;
-    flex: 1; /* Allow the items to grow and take available space */
-    text-align: center; /* Center the text within each item */
+    flex: 1; 
+    text-align: center; 
 }
 
 @media (max-width: 768px) {

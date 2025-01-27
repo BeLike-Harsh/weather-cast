@@ -1,8 +1,8 @@
-const apiKey = '44c717b1774146dd9f6174235252501'; // Replace with your WeatherAPI key
+const apiKey = '44c717b1774146dd9f6174235252501'; 
 const cityInput = document.getElementById('city-input');
 const searchBtn = document.getElementById('search-btn');
 const cityName = document.getElementById('city-name');
-const weatherIcon = document.getElementById('weather-icon'); // Update to display the icon
+const weatherIcon = document.getElementById('weather-icon'); 
 const temperature = document.getElementById('temperature');
 const farenheit = document.querySelector("#farenheit");
 const humidity = document.getElementById('humidity');
@@ -49,7 +49,7 @@ async function getWeather() {
         weatherIcon.alt = data.current.condition.text;
 
         // Change the background dynamically
-        const weatherCondition = data.current.condition.text.toLowerCase(); // Normalize for comparison
+        const weatherCondition = data.current.condition.text.toLowerCase(); 
         if (weatherCondition=="mist") {
             humidity.style.color="#c4b9b9";
             windSpeed.style.color="#c4b9b9";
@@ -65,13 +65,13 @@ async function getWeather() {
             "overcast": "url('https://images.unsplash.com/photo-1499956827185-0d63ee78a910?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
         };
 
-        // Use a default background if condition is not mapped
+        
         weatherInfo.style.backgroundImage =
             backgroundMap[weatherCondition] || "url('https://s7d2.scene7.com/is/image/TWCNews/Mostly_Sunny_Cirrus_Orlando_FL_112822_UGC_KarenLary?wid=1250&hei=703&$wide-bg$')";
-        weatherInfo.style.backgroundSize = "cover"; // Ensure it covers the whole div
+        weatherInfo.style.backgroundSize = "cover"; 
         weatherInfo.style.backgroundPosition = "center";
 
-        // document.getElementById('weather-info').style.display = 'block';
+        
     } catch (error) {
         console.error('Error fetching weather data:', error);
         alert('An error occurred. Please try again later.');
