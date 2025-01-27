@@ -1,0 +1,172 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://www.shutterstock.com/image-vector/blue-sky-cloud-nature-beautiful-600nw-2472495907.jpg");
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    max-width:1400px;
+    height: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #e3dada;
+    height: 10px;
+
+}
+
+.search-container {
+    width: 20%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: inset 4px 4px 8px #ccc, inset -4px -4px 8px #fff;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 8px #ccc, -4px -4px 8px #fff;
+    border-radius: 50px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#search-btn:hover {
+    background-color: #3ba5b8;
+    background-color: #2e8b57;
+    transform: scale(1.1);
+
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:500px;
+    background-image: url('https://img.freepik.com/premium-photo/gray-concrete-texture-building-gray-background-paper-texture_896686-2431.jpg?semt=ais_hybrid'); /* Default background */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-image 0.5s ease-in-out; 
+    
+}
+
+
+#city-name {
+    font-size: 40px;
+    margin-right: 1100px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#weather-icon {
+   margin-left: 1260px;
+   margin-top: -100px;
+   display: none;
+
+}
+
+#date {
+    font-size: 20px;
+    margin-right: 1100px;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+#temperature {
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 1000px;
+    margin-top: -90px;
+    color: #333;
+    width: 150px;
+}
+#farenheit{
+    font-size: 25px;
+    margin-top: -50px;
+    margin-left: 1000px;
+    color: #333;
+}
+#description {
+    font-size: 24px;
+        margin-bottom: 10px;
+    color: #666;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+#humidity, #wind-speed {
+    font-size: 21px;
+    color: #333;
+    flex: 1; /* Allow the items to grow and take available space */
+    text-align: center; /* Center the text within each item */
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+    .search-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    #city-input, #search-btn {
+        width: 100%;
+        border-radius: 5px;
+    }
+    #city-name, #date, #temperature, #farenheit {
+        margin: 60px auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #date {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+    #farenheit {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+    .data {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+}
