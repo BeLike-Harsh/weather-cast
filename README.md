@@ -1,6 +1,6 @@
-# Weather Forecast App 🌤️
+# Weather Forecast Site🌤️
 
-A weather forecast app that provides real-time weather data for any city. The app features live temperature, humidity, wind speed, and dynamic backgrounds and icons based on weather conditions.
+A weather forecast site that provides real-time weather data for any city. The app features live temperature, humidity, wind speed, and dynamic backgrounds and icons based on weather conditions.
 
 ---
 
