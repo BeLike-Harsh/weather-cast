@@ -72,7 +72,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height:500px;
-    background-image: url('https://img.freepik.com/premium-photo/gray-concrete-texture-building-gray-background-paper-texture_896686-2431.jpg?semt=ais_hybrid'); /* Default background */
+    background-image: url('./default.webp'); 
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -88,6 +88,13 @@ h1 {
     margin-top: 50px;
     margin-bottom: 5px;
     color: #333;
+}
+#context {
+    font-size: 28px; 
+    text-align: center;
+    color: #000000; 
+    line-height: 1.5; 
+
 }
 
 #weather-icon {
