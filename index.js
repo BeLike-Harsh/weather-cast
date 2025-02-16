@@ -58,7 +58,7 @@ async function getWeather() {
             "rain": "url('https://wallpaperaccess.com/full/164284.jpg')",
             "thunderstorm": "url('https://get.pxhere.com/photo/sky-cloud-atmosphere-thunder-cumulus-lightning-daytime-storm-darkness-evening-geological-phenomenon-thunderstorm-meteorological-phenomenon-computer-wallpaper-calm-dusk-wind-horizon-dawn-1438107.jpg')",
             "snow": "url('https://images.pexels.com/photos/773594/pexels-photo-773594.jpeg?auto=compress&cs=tinysrgb&w=600')",
-            "mist": "url('https://get.pxhere.com/photo/snow-winter-light-cloud-fog-sunrise-road-mist-sunlight-morning-dawn-atmosphere-foggy-bend-weather-haze-season-misty-dangerous-freezing-atmospheric-phenomenon-atmosphere-of-earth-1087425.jpg')",
+            "mist": "url('https://wallpapercave.com/wp/GD69qeX.jpg')",
             "overcast": "url('https://wallpaper.dog/large/10758686.jpg')",
             "sunny": "url('https://static.vecteezy.com/system/resources/previews/015/134/640/large_2x/a-view-of-the-sky-with-clear-weather-in-the-morning-the-lush-green-fields-are-outdoors-agricultural-landscape-background-design-template-for-book-cover-magazine-website-photo.jpg')"
         };
@@ -67,6 +67,7 @@ async function getWeather() {
             backgroundMap[weatherCondition] || "url('./default.webp')";
         weatherInfo.style.backgroundSize = "cover";
         weatherInfo.style.backgroundPosition = "center";
+        weatherInfo.style.backgroundRepeat = "no-repeat";
 
         //text color based on background
         const textColorMap = {
