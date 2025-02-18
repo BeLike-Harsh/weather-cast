@@ -16,9 +16,9 @@ A weather forecast site that provides real-time weather data for any city. The a
 ## 📸 Screenshots
 
 ### Screenshot 1
-![Screenshot 1](images/Screenshot1.png)
+![Screenshot 1](./images/Screenshot%201.png)
 
 ### Screenshot 2
-![Screenshot 2](images/Screenshot2.png)
+![Screenshot 2](./images/Screenshot%202.png)
 
 ---
