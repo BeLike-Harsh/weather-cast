@@ -12,3 +12,13 @@ A weather forecast site that provides real-time weather data for any city. The a
 - **City Search:** Easy search functionality for city-specific weather data.
 
 ---
+
+## 📸 Screenshots
+
+### Screenshot 1
+![Screenshot 1](./images/Screenshot1.png)
+
+### Screenshot 2
+![Screenshot 2](./images/Screenshot2.png)
+
+---

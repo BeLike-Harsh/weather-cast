@@ -64,7 +64,7 @@ async function getWeather() {
         };
 
         weatherInfo.style.backgroundImage =
-            backgroundMap[weatherCondition] || "url('./default.webp')";
+            backgroundMap[weatherCondition] || "url('./images/default.webp')";
         weatherInfo.style.backgroundSize = "cover";
         weatherInfo.style.backgroundPosition = "center";
         weatherInfo.style.backgroundRepeat = "no-repeat";
